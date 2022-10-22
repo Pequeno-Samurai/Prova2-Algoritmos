@@ -2,41 +2,44 @@
 
 int main ()
 {
-  do 
-  {
+  do {
     
-	int n, op;
+	int ll, cc;
 	
-	printf("Digite o tamanho do vetor: ");
-	scanf("%d", &n);
+	printf("Digite o numero de linhas da matriz: ");
+	scanf("%d", &ll);
+	printf("Digite o numero de colunas da matriz: ");
+	scanf("%d", &cc);
 	
-	int i, x, vetor[n];
-	
-	for (i=0;i<n;i++)
-  { 
-		printf("Digite o valor da posicao %d: ",i); 
-		scanf("%d", &vetor[i]); 
-    } 
-		
-	printf("\n1.Imprime o vetor A na tela:\n2.Imprime o vetor A na ordem inversa:\n\nDigite sua escolha: ");
-	scanf("%d", &op);
-	
-	if (op==1)
-  {
-		for (i=0;i<n;i++)
-    {
-			printf("Vetor %d: %d\n", i, vetor[i]); 
-      } 
-    }
-			
-	if (op==2)
-  {
-		for(i=n-1;i>=0;i--) 
-    {
-			printf("Vetor %d: %d\n", i, vetor[i]);
-      } 
-    }
+	int l, c, op, matEnd[ll][cc];
 
+	for (l=0;l<ll;l++)
+  {
+		for(c=0;c<cc;c++)
+    {
+			printf("\nDigite o valor da posicao [%d][%d]:", l, c);
+			scanf("%d", &matEnd[l][c]); 
+    } 
+  }
+	if (ll==cc) 
+  {
+		printf("\nA matriz matEnd eh quadrada \n"); 
+  }
+			else 
+  {
+		printf("\nA matriz matEnd nao eh quadrada\n"); 
+  }
+		
+	printf("\nImpressao da matriz matEnd: \n\n");
+			
+	for (l=0;l<ll;l++)
+  {
+		for(c=0;c<cc;c++)
+    {
+			printf("%d  ", matEnd[l][c]); 
+    }
+		printf("\n");
+  } 
     } while(1);
-  
+	
 	return 0; }
