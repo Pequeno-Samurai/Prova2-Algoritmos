@@ -8,6 +8,7 @@ Data: 04/07/2022
 Atividade Avaliativa 2
 
 Peso: 5,0
+
 1- Para um vetor A de N números inteiros, faça:
 
 ● O tamanho do vetor N deve ser informado via teclado pelo usuário.
@@ -18,6 +19,7 @@ usuário,
 ● 2 imprime vetor A na ordem inversa;
 
 Peso: 5,0
+
 2-Elabore um programa para uma matriz chamada matEnd seguindo as
 descrições abaixo:
 
